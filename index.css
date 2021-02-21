@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    display: block;
+    height: 5em;
+    background-color: dimgray;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+.h1-block{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.panel-block{
+    width: 20%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel{
+    ...
+}
+
+.upper-menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.upper-menu-item{
+    font-size: 20px;
+}
+.search-container{
+    display: flex;
+
+}
+.search-panel input{
+    width: 1000px;
+    float: left;
+    padding: 6px;
+    border: red;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.search-button button{
+    box-sizing: content-box;
+    margin-top: 5px;
+}
+
+main{
+    background-color: azure;
+    height: 5em;
+}
