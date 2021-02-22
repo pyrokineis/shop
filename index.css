@@ -8,7 +8,7 @@
 header{
     display: block;
     height: 5em;
-    background-color: dimgray;
+    background-color: grey;
 }
 
 nav{
@@ -67,8 +67,12 @@ nav{
     margin-top: 5px;
 }
 
+.left-menu ul{
+    list-style: none;
+}
+
 main{
-    background-color: azure;
+    background-color: #00ffff;
     height: 5em;
 }
 

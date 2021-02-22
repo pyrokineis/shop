@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Бля</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -43,18 +42,24 @@
     </div>
     <div class="left-menu">
 
-
-    </div>
-    <div class="widget">
-        <h3>Категории</h3>
-        <ul>
-            <li><a href="">Видеокарты</a></li>
+        <ul class="left-menu-list">
+            <li>
+                <a class="menu-header">Категории</a>
+            </li>
+            <li class="l=menu-item">
+                <a href="...">
+                    <img src="иконки/видео.png">
+                    <span>Видеокарты</span>
+                </a>
+            </li>
             <li><a href="">Материнские платы</a></li>
             <li><a href="">Оперативная память</a></li>
             <li><a href="">Гавно</a></li>
             <li><a href="">гавно</a></li>
         </ul>
+
     </div>
+
 </main>
 
 <footer>
