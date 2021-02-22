@@ -40,21 +40,51 @@
 
     </div>
     <div class="left-menu">
-
         <ul class="left-menu-list">
             <li>
-                <a class="menu-header">Категории</a>
+                <a class="menu-header" >Категории</a>
             </li>
-            <li class="l=menu-item">
+            <li class="l-menu-item">
                 <a href="...">
                     <img src="иконки/видео.png">
                     <span>Видеокарты</span>
                 </a>
             </li>
-            <li><a href="">Материнские платы</a></li>
-            <li><a href="">Оперативная память</a></li>
-            <li><a href="">Гавно</a></li>
-            <li><a href="">гавно</a></li>
+            <li class="l-menu-item">
+                <a href="">
+                    <img src="иконки/"
+                         <span>Материнские платы</span>
+                </a>
+            </li>
+            <li class="l-menu-item">
+                <a href="">
+                    <img src="иконки/"
+                    <span>Процессоры</span>
+                </a>
+            </li>
+            <li class="l-menu-item">
+                <a href="">
+                    <img src="иконки/"
+                    <span>Оперативная память</span>
+                </a>
+            </li>
+            <li class="l-menu-item">
+                <a href="">
+                    <img src="иконки/"
+                    <span>Блоки питания</span>
+                </a>
+            </li>
+            <li class="l-menu-item">
+                <a href="">
+                    <img src="иконки/"
+                    <span>Кулеры</span>
+                </a>
+            </li><li class="l-menu-item">
+                <a href="">
+                    <img src="иконки/"
+                    <span>Шлейфы</span>
+                </a>
+            </li>
         </ul>
 
     </div>
