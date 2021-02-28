@@ -77,7 +77,6 @@ nav{
 
 
 .left-menu{
-    background-color: aqua;
     padding-left: 30px;
     width: 450px;
 }
@@ -88,7 +87,7 @@ nav{
 }
 
 .left-menu-list a:hover{
-    background: #b3ff00;
+    background: #d46e12;
 }
 .menu-header{
     font-size: 3em;
@@ -116,7 +115,7 @@ nav{
     text-decoration: none;
     display: flex;
     width: 100%;
-    background-color: red;
+    background-color: #efd688;
 }
 
 .main-container{
@@ -124,8 +123,64 @@ nav{
 }
 
 .main-box{
-    background: burlywood;
+    max-width: 1400px;
     width: 100%;
+    justify-content: right;
+    flex-wrap: wrap;
+    /*background: burlywood;*/
+    display: flex;
 }
 
 
+.product-block{
+    padding: 5px;
+    width: 100%;
+    max-width: 1380px;
+    display: flex;
+    border: blueviolet solid 1px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.product-block a{
+    box-sizing: border-box;
+    /*background: #b3ff00;*/
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+.product-block p{
+
+    overflow-wrap: break-word;
+    vertical-align: center;
+}
+
+ .product-block img{
+     /*background: blueviolet;*/
+     width: 170px;
+ }
+
+.product-block button{
+    display: flex;
+    margin: auto;
+    padding: 20px 5px;
+}
+.product-name{
+    margin: auto;
+    font-size: 20px;
+    /*margin: 0 20px;*/
+    width: 75%;
+    /*background: darkorange;*/
+}
+.product-price{
+    margin: auto;
+    font-weight: bolder;
+    font-size: 25px;
+    width: 110px;
+    background: crimson;
+    text-align: right;
+}
