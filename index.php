@@ -32,17 +32,20 @@
 <main>
     <div class="search-container">
         <div class="search-panel">
-            <input type="text" name="search" placeholder="Поиск на сайте">
+            <input type="text" name="search" placeholder="  Поиск на сайте">
         </div>
         <div class="search-button">
             <button type="submit">Найти</button>
         </div>
-
     </div>
+
+
+<div class="main-container">
+
     <div class="left-menu">
         <ul class="left-menu-list">
             <li>
-                <a class="menu-header" >Категории</a>
+                <p class="menu-header" >Категории</p>
             </li>
             <li class="l-menu-item">
                 <a href="...">
@@ -52,42 +55,46 @@
             </li>
             <li class="l-menu-item">
                 <a href="">
-                    <img src="иконки/"
-                         <span>Материнские платы</span>
+                    <img src="иконки/видео.png"
+                    <span>Материнские платы</span>
                 </a>
             </li>
             <li class="l-menu-item">
                 <a href="">
-                    <img src="иконки/"
+                    <img src="иконки/видео.png"
                     <span>Процессоры</span>
                 </a>
             </li>
             <li class="l-menu-item">
                 <a href="">
-                    <img src="иконки/"
+                    <img src="иконки/видео.png"
                     <span>Оперативная память</span>
                 </a>
             </li>
             <li class="l-menu-item">
                 <a href="">
-                    <img src="иконки/"
+                    <img src="иконки/видео.png"
                     <span>Блоки питания</span>
                 </a>
             </li>
             <li class="l-menu-item">
                 <a href="">
-                    <img src="иконки/"
+                    <img src="иконки/видео.png"
                     <span>Кулеры</span>
                 </a>
             </li><li class="l-menu-item">
                 <a href="">
-                    <img src="иконки/"
+                    <img src="иконки/видео.png"
                     <span>Шлейфы</span>
                 </a>
             </li>
         </ul>
+    </div>
+    <div class="main-box">
 
     </div>
+
+</div>
 
 </main>
 
