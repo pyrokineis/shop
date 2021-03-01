@@ -59,6 +59,7 @@ body{
     font-size: 20px;
 }
 .search-container{
+    padding-top: 5px;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -78,11 +79,14 @@ body{
     text-align: center;
     border: solid black 1px;
     justify-content: center;
-    background: darkblue;
+    /*background: khaki;*/
 }
 
 .search-button  button{
     height: 100%;
+    background-color: khaki;
+    padding: 0 5px;
+    border-radius: 15px;
 }
 
 
@@ -97,7 +101,7 @@ body{
 }
 
 .left-menu-list a:hover{
-    background: #d46e12;
+    background: khaki;
 }
 .menu-header{
     font-size: 3em;
@@ -125,7 +129,7 @@ body{
     text-decoration: none;
     display: flex;
     width: 100%;
-    background-color: #efd688;
+    background-color: khaki;
 }
 
 .main-container{
@@ -139,6 +143,7 @@ body{
     flex-wrap: wrap;
     /*background: burlywood;*/
     display: flex;
+    padding-right: 50px;
 }
 
 
@@ -146,11 +151,13 @@ body{
     padding: 5px;
     width: 100%;
     max-width: 1380px;
-    display: flex;
-    border: blueviolet solid 1px;
+    display: block;
+    border: dimgrey solid 1px;
     height: auto;
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 30px;
+    justify-items: right;
 }
 
 .product-block a{
@@ -172,30 +179,40 @@ body{
  .product-block img{
      /*background: blueviolet;*/
      width: 170px;
+     padding-left: 10px;
  }
 
 .product-block button{
-    display: flex;
-    margin: auto;
-    padding: 20px 5px;
+    display: block;
+    padding: 10px 5px;
+    background-color: khaki;
+    border-radius: 20px;
+    margin: 10px auto auto auto;
+    font-size: 17px;
 }
 .product-name{
-    margin: auto;
-    font-size: 20px;
+
+    margin: 30px auto;
+    font-size: 18px;
     /*margin: 0 20px;*/
-    width: 73%;
-    background: #bbff00;
+    width: 65%;
+    /*background: #bbff00;*/
+
 }
 .product-price{
-    margin: auto;
+    margin: 30px auto;
     font-weight: bolder;
     font-size: 25px;
-    width: 110px;
-    background: crimson;
+    width: max-content;
+    /*background: crimson;*/
     text-align: right;
+    padding-right: 20px;
+    text-wrap: avoid;
 }
 
-
+.product-info{
+    display: flex;
+}
 ------------- Модальное окно -------------
 
 
