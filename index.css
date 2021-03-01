@@ -3,6 +3,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+button{
+    outline: none;
+}
 a{
     text-decoration: none;
     color: black;
@@ -20,9 +23,11 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
 body{
     position: relative;
 }
+
 .h1-block{
     width: 20%;
     height: 100%;
@@ -159,8 +164,31 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-
 }
+
+.login-top{
+    display: flex;
+    justify-content: space-between;
+    background: orange;
+}
+
+.login-button{
+    background: khaki;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+#login-window input{
+    border-radius: 15px;
+    border-width: 1px;
+    width: 60%;
+}
+
 .modal:target{display: block;}
 .modal:not(target){display: none;}
 .modal.back{
@@ -174,34 +202,39 @@ body{
     right: 0;
     bottom: 0;
 }
-
+/*#efd688;*/
 #login-window, #registration-window{
-    background-color: #efd688;
+    background-color: white;
     border: lightgrey solid 2px;
     text-align: center;
     width: 300px;
     height: 300px;
     margin: 50px auto auto auto;
-    /*display: block;*/
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
-#login-window:target{display: block;}
+
+#login-window:target{
+    display: block;
+}
 
 
-#registration-window:target{display: block;}
+#registration-window:target{
+    display: block;
+}
 
 .modal-header {
     display: flex;
     align-items: center;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 15px;
     border-bottom: 1px solid #eceeef;
 }
+
 .modal-title {
     margin-top: 0;
     margin-bottom: 0;

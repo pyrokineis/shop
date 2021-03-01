@@ -1,7 +1,5 @@
-
 <html lang="ru">
 <head>
-
     <meta charset="UTF-8">
     <title>Железяка.ru</title>
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -9,20 +7,30 @@
 <body>
 
 <div id="modal1" class="modal">
-    <a class="back" href="#">  </a>
+    <a class="back" href="#">НАЗАД</a>
     <div id="login-window">
-        <h3 class="modal-title">Личный кабинет</h3>
-        <a href="#close" title="Закрыть" class="close">×</a>
-        <a href="#modal2">Регистрация</a></div>
+        <div class="login-top">
+            <h3 class="modal-title">Личный кабинет</h3>
+            <a href="#close" title="Закрыть" class="close">×</a>
+        </div>
+        <p>Логин/E-mail</p>
+        <input type="text">
+        <p>Пароль</p>
+        <input type="password">
+        <div>
+            <button class="login-button" href="#modal2">Регистрация</button>
+            <button class="login-button">Войти</button>
+        </div>
+    </div>
 </div>
 
-
 <div id="modal2" class="modal">
-    <a class="back" href="#">  </a>
-    <div id="registration-window">
-        <h3 class="modal-title">Регистрация</h3>
-        <a href="#close" title="Закрыть" class="close">×</a>
-        <a href="#modal1">Назад</a></div>
+        <a class="back" href="#">  </a>
+        <div id="registration-window">
+            <h3 class="modal-title">Регистрация</h3>
+            <button  class="close">×</button>
+            <a href="#modal1">Назад</a>
+        </div>
 </div>
 
 

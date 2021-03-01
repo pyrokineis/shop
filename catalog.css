@@ -5,6 +5,10 @@
     box-sizing: border-box;
     margin: 0;
 }
+button{
+    outline: none;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -192,6 +196,7 @@ body{
     border-radius: 20px;
     margin: 10px auto auto auto;
     font-size: 17px;
+    outline: none;
 }
 .product-name{
 
@@ -233,6 +238,23 @@ body{
     bottom: 0;
 
 }
+
+.login-top{
+    display: flex;
+    justify-content: space-between;
+    background: orange;
+}
+.login-button{
+    background: khaki;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
 .modal:target{display: block;}
 .modal:not(target){display: none;}
 .modal.back{
@@ -261,6 +283,8 @@ body{
     right: 0;
     bottom: 0;
 }
+
+
 #login-window:target{display: block;}
 
 
