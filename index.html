@@ -7,6 +7,22 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+
+    <div id="modal1" class="modal">
+        <div id="login-window">
+            <h3 class="modal-title">Личный кабинет</h3>
+            <a href="#close" title="Закрыть" class="close">×</a>
+            <a href="#modal2">Регистрация</a></div>
+    </div>
+
+
+
+<div id="modal2" class="modal">
+    <div id="registration-window">
+        <h3 class="modal-title">Регистрация</h3>
+        <a href="#close" title="Закрыть" class="close">×</a>
+        <a href="#modal1">Назад</a></div>
+</div>
 <header>
     <div class="h1-block">
         <h1>Магазин магазин</h1>
@@ -14,7 +30,7 @@
     <div class="panel-block" title="Иконки">
         <div class="panel">
             <a>Корзина</a>
-            <a>Личный кабинет</a>
+            <a href="#modal1">Личный кабинет</a>
         </div>
     </div>
 
@@ -31,7 +47,10 @@
     </nav>
 </header>
 
+
 <main>
+
+
     <div class="search-container">
         <div class="search-panel">
             <input type="text" name="search" placeholder="  Поиск на сайте">
