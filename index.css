@@ -19,6 +19,9 @@ nav{
     align-items: center;
     justify-content: center;
 }
+body{
+    position: relative;
+}
 .h1-block{
     width: 20%;
     height: 100%;
@@ -180,8 +183,8 @@ nav{
     margin: auto;
     font-size: 20px;
     /*margin: 0 20px;*/
-    width: 75%;
-    /*background: darkorange;*/
+    width: 73%;
+    background: #bbff00;
 }
 .product-price{
     margin: auto;
@@ -202,6 +205,12 @@ nav{
     position: absolute;
     text-align: center;
     justify-content: center;
+    display: block;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
 }
 .modal:target{display: block;}
@@ -218,13 +227,13 @@ nav{
     bottom: 0;
 }
 
-#login-window{
+#login-window, #registration-window{
     background-color: #efd688;
     border: lightgrey solid 2px;
     text-align: center;
     width: 300px;
     height: 300px;
-    margin: auto;
+    margin: 50px auto auto auto;
     /*display: block;*/
     position: absolute;
     top: 0;
@@ -233,25 +242,9 @@ nav{
     bottom: 0;
 }
 #login-window:target{display: block;}
-/*#enter-window:not(target){display: none;}*/
 
-#registration-window{
-    background-color: #efd688;
-    border: lightgrey solid 2px;
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    margin: auto;
-    /*display: block;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+
 #registration-window:target{display: block;}
-/*#registration-window:not(target){display: none;}*/
-
 
 .modal-header {
     display: flex;
@@ -268,7 +261,7 @@ nav{
     font-size: 1.25rem;
     font-weight: 500;
 }
-/* свойства для кнопки "Закрыть" */
+
 .close {
     float: right;
     font-family: sans-serif;
@@ -280,10 +273,22 @@ nav{
     opacity: .5;
     text-decoration: none;
 }
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+
 .close:focus, .close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
     opacity: .75;
+}
+
+.modal .back{
+    background: dimgray;
+    opacity: 40%;
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
