@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     box-sizing: border-box;
@@ -59,7 +61,6 @@ body{
 .upper-menu-item{
     font-size: 20px;
 }
-
 .search-container{
     padding-top: 5px;
     display: flex;
@@ -117,11 +118,13 @@ body{
 }
 
 
+
 .l-menu-item{
     display: flex;
     font-size: 25px;
     margin-top: 3px;
 }
+
 
 .l-menu-item a{
     font-family: Courier New;
@@ -141,12 +144,81 @@ body{
     width: 100%;
     justify-content: right;
     flex-wrap: wrap;
-    background: burlywood;
+    /*background: burlywood;*/
     display: flex;
     padding-right: 50px;
 }
 
------модальное окно---------
+
+.product-block{
+    padding: 5px;
+    width: 100%;
+    max-width: 1380px;
+    display: block;
+    border: dimgrey solid 1px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    justify-items: right;
+}
+
+.product-block a{
+    box-sizing: border-box;
+    /*background: #b3ff00;*/
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+.product-block p{
+
+    overflow-wrap: break-word;
+    vertical-align: center;
+}
+
+ .product-block img{
+     /*background: blueviolet;*/
+     width: 170px;
+     padding-left: 10px;
+ }
+
+.product-block button{
+    display: block;
+    padding: 10px 5px;
+    background-color: khaki;
+    border-radius: 20px;
+    margin: 10px auto auto auto;
+    font-size: 17px;
+}
+.product-name{
+
+    margin: 30px auto;
+    font-size: 18px;
+    /*margin: 0 20px;*/
+    width: 65%;
+    /*background: #bbff00;*/
+
+}
+.product-price{
+    margin: 30px auto;
+    font-weight: bolder;
+    font-size: 25px;
+    width: max-content;
+    /*background: crimson;*/
+    text-align: right;
+    padding-right: 20px;
+    text-wrap: avoid;
+}
+
+.product-info{
+    display: flex;
+}
+------------- Модальное окно -------------
+
+
 .modal{
     width: 100%;
     height: 100%;
