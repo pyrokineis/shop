@@ -98,6 +98,7 @@ body{
 
 
 .left-menu{
+    padding-top: 10px;
     padding-left: 30px;
     width: 450px;
 }
@@ -151,6 +152,7 @@ body{
     /*background: burlywood;*/
     display: flex;
     padding-right: 50px;
+    margin: auto;
 }
 
 
