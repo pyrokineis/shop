@@ -2,43 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Железяка.ru</title>
+    <link rel="stylesheet" type="text/css" href="based.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-
-<div id="modal1" class="modal">
-    <a class="back" href="#">НАЗАД</a>
-    <div id="login-window">
-        <div class="login-top">
-            <h3 class="modal-title">Личный кабинет</h3>
-            <a href="#close" title="Закрыть" class="close">×</a>
-        </div>
-        <p>Логин/E-mail</p>
-        <input type="text">
-        <p>Пароль</p>
-        <input type="password">
-        <div>
-            <button class="login-button" href="#modal2">Регистрация</button>
-            <button class="login-button">Войти</button>
-        </div>
-    </div>
-</div>
-
-<div id="modal2" class="modal">
-        <a class="back" href="#">  </a>
-        <div id="registration-window">
-            <h3 class="modal-title">Регистрация</h3>
-            <button  class="close">×</button>
-            <a href="#modal1">Назад</a>
-        </div>
-</div>
-
 
 <header>
     <div class="h1-block">
         <a href="index.html"><h1>Железяка.ru</h1></a>
     </div>
-    <div class="panel-block" title="Иконки">
+    <div class="panel-block">
         <div class="panel">
             <a>Корзина</a>
             <a href="#modal1">Личный кабинет</a>
@@ -58,6 +31,42 @@
 
 
 <main>
+
+    <div id="modal1" class="modal">
+        <a class="back" href="#">НАЗАД</a>
+        <div id="login-window">
+            <div class="login-top">
+                <h3 class="modal-title">Личный кабинет</h3>
+                <a href="#close" title="Закрыть" class="close">×</a>
+            </div>
+            <p>Логин/E-mail</p>
+            <input type="text">
+            <p>Пароль</p>
+            <input type="password">
+            <div>
+<!--                <form style="display: inline" action="#modal2" method="get">-->
+<!--                    <button type="button">Регистрация</button>-->
+<!--                </form>-->
+                <a href="#modal2">
+                    <button type="button" class="login-button">Регистрация</button>
+                </a>
+
+                <button class="login-button" type="button">Войти</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <a class="back" href="#">  </a>
+        <div id="registration-window">
+            <h3 class="modal-title">Регистрация</h3>
+            <button  class="close">×</button>
+            <a href="#modal1">Назад</a>
+        </div>
+    </div>
+
+
+
     <div class="search-container">
         <div class="search-panel">
             <input type="text" name="search" placeholder="  Поиск на сайте">
@@ -68,12 +77,12 @@
     </div>
 
     <div class="main-container">
-        <div class="categoriesBox-header">
-            <h2 class="categoriesBox-title">
-                Популярные категории
-            </h2>
-        </div>
         <div class="main-box">
+            <div class="categoriesBox-header">
+                <h2 class="categoriesBox-title">
+                    Категории
+                </h2>
+            </div>
             <div class="categories-container">
                 <div class="categories-item">
                     <img src="иконки/видео.png" />
@@ -146,13 +155,31 @@
                     <a href="catalog.html"></a>
                 </div>
             </div>
+            <div class="banners-container">
+                <div class="banner">
+                    <h2 class="banner-title">
+                        Скидки
+                    </h2>
+                    <img src="иконки/видео.png">
+
+                </div>
+                <div class="banner" >
+                    <h2 class="banner-title">
+                        Новинки
+                    </h2>
+                    <img src="иконки/видео.png">
+
+                </div>
+            </div>
         </div>
     </div>
 
 </main>
 
 <footer>
-
+    <div class="footer-main-container">
+        fdsfdsfgdsfgds
+    </div>
 </footer>
 
 </body>
