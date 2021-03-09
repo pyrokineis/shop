@@ -35,7 +35,7 @@
 .categories-item{
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
+    width: 19%;
     /*background: blueviolet;*/
     margin-top: 10px;
     justify-content: center;
