@@ -115,9 +115,11 @@ body{
 }
 
 .login-top{
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     background: khaki;
+    margin-bottom: 10px;
 }
 
 .login-button{
@@ -140,6 +142,12 @@ a.button{
     padding: 5px 10px;
     margin-top: 10px;
     outline: none;
+}
+
+#registration-window input{
+    border-radius: 15px;
+    border-width: 1px;
+    width: 60%;
 }
 
 #login-window input{
@@ -165,9 +173,10 @@ a.button{
 #login-window, #registration-window{
     background-color: white;
     border: lightgrey solid 2px;
+    border-radius: 10px;
     text-align: center;
     width: 300px;
-    height: 300px;
+    height: 250px;
     margin: 50px auto auto auto;
     display: block;
     position: absolute;
@@ -175,6 +184,9 @@ a.button{
     left: 0;
     right: 0;
     bottom: 0;
+}
+#registration-window{
+    height: 450px;
 }
 
 #login-window:target{
@@ -186,20 +198,22 @@ a.button{
     display: block;
 }
 
-.modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
+/*.modal-header {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: 15px;*/
+/*    border-bottom: 1px solid #eceeef;*/
+/*    text-align: center;*/
+/*}*/
 
 .modal-title {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.5;
     font-size: 1.25rem;
     font-weight: 500;
+    text-align: center;
+
 }
 
 .close {
