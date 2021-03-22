@@ -1,6 +1,5 @@
 .main-container{
-
-    margin: auto;
+    margin: 45px auto auto auto;
     display: block;
     /*background: crimson;*/
     max-width: 1800px;
@@ -46,7 +45,7 @@
 
 .categories-item img{
     margin-top: 10px;
-    max-width: 250px;
+    width: 80%;
 }
 .categories-title{
     font-size: 25px;

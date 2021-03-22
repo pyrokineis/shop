@@ -22,6 +22,7 @@ nav{
     width: auto;
     align-items: center;
     justify-content: center;
+    background: grey;
 }
 
 body{
@@ -69,8 +70,9 @@ body{
 .search-container{
     padding-top: 5px;
     display: flex;
-    margin: auto;
+    margin: auto auto 100px auto;
     justify-content: center;
+
 }
 .search-panel input{
     width: 99%;

@@ -1,0 +1,96 @@
+create database shop
+
+create table category_tbl
+(
+    category_name varchar(20) not null
+        primary key
+);
+
+
+create table client_tbl
+(
+    login           varchar(50)  not null
+        primary key,
+    fio             varchar(100) not null,
+    `e-mail`        varchar(50)  not null,
+    client_password varchar(50)  not null,
+    phone           varchar(15)  not null
+);
+
+create table cpu_tbl
+(
+    product_id        int             not null
+        primary key,
+    Series            varchar(50)     not null,
+    codename          varchar(50)     not null,
+    socket            varchar(50)     not null,
+    cores_number      varchar(50)     not null,
+    `hyper-threading` enum ('-', '+') not null,
+    threads_number    varchar(50)     not null,
+    clock_freq        varchar(50)     null,
+    boost_freq        varchar(50)     not null,
+    nm_process        varchar(50)     not null,
+    tdp               varchar(50)     not null,
+    max_ddr_size      varchar(50)     not null,
+    max_ddr_freq      varchar(50)     not null,
+    constraint cpu_tbl_product_tbl__fk
+        foreign key (product_id) references product_tbl (id)
+);
+
+create table gpu_tbl
+(
+    product_id      int         not null
+        primary key,
+    connection_type varchar(50) not null,
+    chipset         varchar(50) not null,
+    memory_size     varchar(50) not null,
+    memory_type     varchar(10) not null,
+    memory_clock    varchar(50) not null,
+    cores           varchar(50) not null,
+    cores_clock     varchar(50) not null,
+    nm_process      varchar(50) not null,
+    power_connect   varchar(50) not null,
+    min_rec_psu     varchar(50) not null,
+    constraint gpu_tbl_product_tbl__fk
+        foreign key (product_id) references product_tbl (id)
+);
+
+create table order_tbl
+(
+    id           int auto_increment
+        primary key,
+    dataTime     datetime        not null,
+    status       enum ('0', '1') not null,
+    client_login varchar(50)     not null,
+    constraint order_tbl_client_tbl__fk
+        foreign key (client_login) references client_tbl (login)
+);
+
+(
+    id            int auto_increment
+        primary key,
+    category      varchar(20)  not null,
+    naming        varchar(200) not null,
+    serial_numver varchar(50)  null,
+    old_price     int          not null,
+    descr         text         not null,
+    pic           blob         not null,
+    color         varchar(50)  null,
+    size          varchar(100) not null,
+    price         int          not null,
+    constraint product_tbl_category_tbl__fk
+        foreign key (category) references category_tbl (category_name)
+);
+
+create table product_in_order_tbl
+(
+    product_id int not null,
+    order_id   int not null,
+    amount     int not null,
+    primary key (order_id, product_id),
+    constraint product_in_order_tbl_order_tbl__fk
+        foreign key (order_id) references order_tbl (id),
+    constraint product_in_order_tbl_product_tbl__fk
+        foreign key (product_id) references product_tbl (id)
+);
+
