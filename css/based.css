@@ -255,5 +255,15 @@ a.button{
     height: 500px;
 }
 .footer-main-container{
-    background: crimson;
+    display: flex;
+    /*background: crimson;*/
+    justify-content: center;
+}
+.footer-column{
+    margin: 10px 200px 30px 200px;
+}
+
+.footer-column li{
+    list-style: none;
+
 }

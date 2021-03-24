@@ -28,9 +28,11 @@
     /*background: crimson;*/
     border-bottom: khaki solid 3px;
     border-radius: 3px;
-
-
 }
+.categories-container a{
+    /*TODO*/
+}
+
 .categories-item{
     display: flex;
     flex-wrap: wrap;

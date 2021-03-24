@@ -23,11 +23,12 @@
             </div>
             <div class="categories-container">
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Видеокарты
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a href="catalog.php">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Видеокарты
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
                     <img src="../pics/видео.png" />
@@ -115,7 +116,27 @@
 </main>
 
 <footer>
-    <?php include_once ("../include/footer.php");?>
+<!--    --><?php //include_once ("../include/footer.php");?>
+    <div class="footer-main-container">
+        <ul class="footer-column">
+            <li>чота1</li>
+            <li>чота1</li>
+            <li>чота1</li>
+            <li>чота1</li>
+        </ul>
+        <ul class="footer-column">
+            <li>чота2</li>
+            <li>чота2</li>
+            <li>чота2</li>
+            <li>чота2</li>
+        </ul>
+        <ul class="footer-column">
+            <li>чота3</li>
+            <li>чота3</li>
+            <li>чота3</li>
+            <li>чота3</li>
+        </ul>
+    </div>
 </footer>
 
 </body>
