@@ -29,10 +29,6 @@
     border-bottom: khaki solid 3px;
     border-radius: 3px;
 }
-.categories-container a{
-    /*TODO*/
-}
-
 .categories-item{
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +40,12 @@
     border-radius: 20px;
 
 }
+.categories-item a{
+    width: 100%;
+    text-align: center;
+    /*background-color: crimson;*/
+}
+
 
 .categories-item img{
     margin-top: 10px;

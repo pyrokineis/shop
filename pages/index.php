@@ -31,67 +31,76 @@
                     </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Материнские платы
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Материнские платы
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Процессоры
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Процессоры
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Оперативная память
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Оперативная память
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Блоки питания
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Блоки питания
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        HHD/SSD
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            HDD/SSD
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Корпусы
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Корпусы
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Кулеры и СО
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Кулеры и СО
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Шлейфы и кабели
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Щлейфы и кабели
+                        </div>
+                    </a>
                 </div>
                 <div class="categories-item">
-                    <img src="../pics/видео.png" />
-                    <div class="categories-title">
-                        Аксессуары
-                    </div>
-                    <a href="catalog.php"></a>
+                    <a  href="">
+                        <img src="../pics/видео.png" />
+                        <div class="categories-title">
+                            Аксессуары
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="banners-container">
