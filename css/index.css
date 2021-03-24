@@ -1,5 +1,5 @@
 .main-container{
-    margin: 45px auto auto auto;
+    padding: 50px 0px 0px 0px;
     display: block;
     /*background: crimson;*/
     max-width: 1800px;
@@ -17,6 +17,7 @@
 .categoriesBox-title{
     padding: 10px;
     margin: auto;
+    /*background: chartreuse;*/
 
 }
 

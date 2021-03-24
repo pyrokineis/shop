@@ -9,6 +9,11 @@
     margin: auto;
 }
 
+.left-menu-list{
+    position: sticky;
+    top: 0;
+}
+
 .left-menu-list a:hover{
     background: #e9c857;
 }

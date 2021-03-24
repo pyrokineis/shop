@@ -1,6 +1,8 @@
 <?php
 echo <<<HERE
-    <div class="h1-block">
+
+    
+        <div class="h1-block">
         <a href="index.php"><h1>Железяка.ru</h1></a>
     </div>
     <div class="panel-block">
