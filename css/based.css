@@ -258,6 +258,10 @@ a.button{
     height: 500px;
 }
 .footer-main-container{
+    margin: 10px 10px;
+    max-width: 1800px;
+    border-top: khaki solid 3px;
+    border-radius: 3px;
     display: flex;
     /*background: crimson;*/
     justify-content: center;
@@ -268,5 +272,4 @@ a.button{
 
 .footer-column li{
     list-style: none;
-
 }
