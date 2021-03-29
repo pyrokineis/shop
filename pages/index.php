@@ -37,8 +37,8 @@
                 <div class="categories-item">
                     <a href="catalog.php">
                         <img src="../pics/video.png" />
-                        <div class="categories-title">'.
-                        $row[0].'
+                        <div class="categories-title">
+                        '. $row[0].'
                         </div>
                     </a>
                 </div>';

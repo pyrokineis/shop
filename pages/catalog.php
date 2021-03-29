@@ -24,65 +24,79 @@
             <li>
                 <p class="menu-header" >Категории</p>
             </li>
-            <li class="l-menu-item">
+            <?php
+            require_once '../DB/connection.php';
+            $link = mysqli_connect($host, $user, $password, $database)
+            or die("Ошибка " . mysqli_error($link));
+
+            $query ="SELECT * FROM category_tbl";
+            $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+            while ($row=mysqli_fetch_row($result))
+            {
+                echo '
+                <li class="l-menu-item">
                 <a href="">
                     <img src="../pics/video.png">
-                    <span>Видеокарты</span>
+                    <span>'.$row[0].'</span>
                 </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Материнские платы</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Процессоры</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Оперативная память</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Блоки питания</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>HHD/SSD</span>
-                </a>
-            </li><li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Корпусы</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Кулеры и СО</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Шлейфы и кабели</span>
-                </a>
-            </li>
-            <li class="l-menu-item">
-                <a href="">
-                    <img src="../pics/video.png">
-                    <span>Аксессуары</span>
-                </a>
-            </li>
+            </li>';
+            }
+            mysqli_close($link);
+            ?>
+
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Материнские платы</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Процессоры</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Оперативная память</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Блоки питания</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>HHD/SSD</span>-->
+<!--                </a>-->
+<!--            </li><li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Корпусы</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Кулеры и СО</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Шлейфы и кабели</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="l-menu-item">-->
+<!--                <a href="">-->
+<!--                    <img src="../pics/video.png">-->
+<!--                    <span>Аксессуары</span>-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
     </div>
     <div class="main-box">
