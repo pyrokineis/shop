@@ -1,10 +1,12 @@
-insert into category_tbl(category_name) values('Видеокарты');
-insert into category_tbl(category_name) values('Материнские платы');
-insert into category_tbl(category_name) values('Процессоры');
-insert into category_tbl(category_name) values('Оперативная память');
-insert into category_tbl(category_name) values('Блоки питания');
-insert into category_tbl(category_name) values('HDD/SSD');
-insert into category_tbl(category_name) values('Корпусы');
-insert into category_tbl(category_name) values('Кулеры и СО');
-insert into category_tbl(category_name) values('Шлейфы и кабели');
-insert into category_tbl(category_name) values('Аксессуары');
+insert into category_tbl(category_name, id) values('Видеокарты','1');
+insert into category_tbl(category_name, id) values('Материнские платы','2');
+insert into category_tbl(category_name, id) values('Процессоры','3');
+insert into category_tbl(category_name, id) values('Оперативная память','4');
+insert into category_tbl(category_name, id) values('Блоки питания','5');
+insert into category_tbl(category_name, id) values('HDD/SSD','6');
+insert into category_tbl(category_name, id) values('Корпусы','7');
+insert into category_tbl(category_name, id) values('Кулеры и СО','8');
+insert into category_tbl(category_name, id) values('Шлейфы и кабели','9');
+insert into category_tbl(category_name, id) values('Аксессуары','10');
+
+select * from category_tbl order by id
