@@ -72,6 +72,10 @@
     justify-items: right;
 }
 
+.product-block:hover{
+    border: #e9c857 solid 1px;
+}
+
 .product-block a{
     box-sizing: border-box;
     /*background: #b3ff00;*/
@@ -94,7 +98,9 @@
      width: 170px;
      padding-left: 10px;
  }
+.add-product-btn{
 
+}
 .product-block button{
     display: block;
     padding: 10px 5px;
@@ -104,10 +110,17 @@
     font-size: 17px;
     outline: none;
 }
+
+.product-block button:hover{
+    background-color: #e9c857;
+    cursor: hand;
+}
+
+
 .product-name{
 
     margin: 30px auto;
-    font-size: 18px;
+    font-size: 25px;
     /*margin: 0 20px;*/
     width: 65%;
     /*background: #bbff00;*/
@@ -116,7 +129,7 @@
 .product-price{
     margin: 30px auto;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 27px;
     width: max-content;
     /*background: crimson;*/
     text-align: right;

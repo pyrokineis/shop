@@ -53,12 +53,13 @@
     width: 80%;
 }
 .categories-title{
-    font-size: 25px;
+    font-size: 27px;
 }
 .categories-title::after{
     content:"→";
     font-size: 20px;
 }
+
 .banners-container{
     margin-top: 10px;
     /*background: white;*/

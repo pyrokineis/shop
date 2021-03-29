@@ -31,13 +31,13 @@
 
             $query ="SELECT * FROM category_tbl";
             $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-            while ($row=mysqli_fetch_row($result))
+            while ($row=mysqli_fetch_array($result))
             {
                 echo '
                 <li class="l-menu-item">
                 <a href="">
                     <img src="../pics/video.png">
-                    <span>'.$row[0].'</span>
+                    <span>'.$row['category_name'].'</span>
                 </a>
             </li>';
             }
@@ -100,64 +100,78 @@
         </ul>
     </div>
     <div class="main-box">
+        <?php
+        require_once '../DB/connection.php';
+        $link = mysqli_connect($host, $user, $password, $database)
+        or die("Ошибка " . mysqli_error($link));
+        $ct=$_GET["ct"];
+        $query ="SELECT * FROM product_tbl where category='$ct'";
+        $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
+
+        while ($row=mysqli_fetch_array($result))
+        {
+            echo '
         <div class="product-block">
             <div class="product-info">
                 <a href="">
-                    <img alt="Video for Icon" src="../pics/video.png">
-                    <p class="product-name">Видеокарта GIGABYTE NVIDIA GeForce RTX 3080 , GV-N3080GAMING OC-10GD, 10ГБ, GDDR6X, OC, Ret</p>
-                    <p class="product-price">100 000 р. <button class="add-product-btn">Добавить</button> </p>
+                    <img alt="Video for Icon" src="../pics/'.$row['pic'].'">
+                    <p class="product-name">'.$row['naming'].'</p>
+                    <p class="product-price">'.$row['price'].' р.<button >Добавить</button> </p>
                 </a>
             </div>
+        </div>';
+        }
+        mysqli_close($link);
+        ?>
 
-        </div>
-        <div class="product-block">
-            <a href="">
-                <img alt="VIdeo for icon" src="../pics/video.png">
-                <p class="product-name">Товар 2</p>
-                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>
-            </a>
+<!--        <div class="product-block">-->
+<!--            <a href="">-->
+<!--                <img alt="VIdeo for icon" src="../pics/video.png">-->
+<!--                <p class="product-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aperiam dolores harum laboriosam neque nostrum, perspiciatis saepe soluta vero?</p>-->
+<!--                <p class="product-price">100 р.<button>Добавить</button></p>-->
+<!--            </a>-->
 
-        </div>
-        <div class="product-block">
-            <a href="">
-                <img src="../pics/video.png">
-                <p class="product-name">Товар 3</p>
-                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>
-            </a>
-
-        </div>
-        <div class="product-block">
-            <a href="">
-                <img src="../pics/video.png">
-                <p class="product-name">Товар 4</p>
-                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>
-            </a>
-
-        </div>
-        <div class="product-block">
-            <a href="">
-                <img src="../pics/video.png">
-                <p class="product-name">Товар 5</p>
-                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>
-            </a>
-
-        </div>
-        <div class="product-block">
-            <a href="">
-                <img src="../pics/video.png">
-                <p class="product-name">Товар 6</p>
-                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>
-            </a>
-
-        </div>
-        <div class="product-block">
-            <a href="">
-                <img src="../pics/video.png">
-                <p class="product-name">Товар 7</p>
-                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>
-            </a>
-
-        </div>
+<!--        </div>-->
+<!--        <div class="product-block">-->
+<!--            <a href="">-->
+<!--                <img src="../pics/video.png">-->
+<!--                <p class="product-name">Товар 3</p>-->
+<!--                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>-->
+<!--            </a>-->
+<!---->
+<!--        </div>-->
+<!--        <div class="product-block">-->
+<!--            <a href="">-->
+<!--                <img src="../pics/video.png">-->
+<!--                <p class="product-name">Товар 4</p>-->
+<!--                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>-->
+<!--            </a>-->
+<!---->
+<!--        </div>-->
+<!--        <div class="product-block">-->
+<!--            <a href="">-->
+<!--                <img src="../pics/video.png">-->
+<!--                <p class="product-name">Товар 5</p>-->
+<!--                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>-->
+<!--            </a>-->
+<!---->
+<!--        </div>-->
+<!--        <div class="product-block">-->
+<!--            <a href="">-->
+<!--                <img src="../pics/video.png">-->
+<!--                <p class="product-name">Товар 6</p>-->
+<!--                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>-->
+<!--            </a>-->
+<!---->
+<!--        </div>-->
+<!--        <div class="product-block">-->
+<!--            <a href="">-->
+<!--                <img src="../pics/video.png">-->
+<!--                <p class="product-name">Товар 7</p>-->
+<!--                <p class="product-price">100 р.<button class="add-product-btn">Добавить</button></p>-->
+<!--            </a>-->
+<!---->
+<!--        </div>-->
     </div>
 </div>
 

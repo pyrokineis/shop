@@ -13,7 +13,6 @@
 
 
 <main>
-
     <?php include_once("../include/login_win.php");?>
     <div class="main-container">
         <div class="main-box">
@@ -31,14 +30,14 @@
 
                 $query ="SELECT * FROM category_tbl";
                 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-                while ($row=mysqli_fetch_row($result))
+                while ($row=mysqli_fetch_array($result))
                 {
                     echo '
                 <div class="categories-item">
-                    <a href="catalog.php">
+                    <a href="catalog.php?ct='.$row['category_name'].'">
                         <img src="../pics/video.png" />
                         <div class="categories-title">
-                        '. $row[0].'
+                        '. $row['category_name'].'
                         </div>
                     </a>
                 </div>';
