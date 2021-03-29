@@ -1,20 +1,39 @@
-create database shop
+create database shop;
 
 create table category_tbl
 (
-    category_name varchar(20) not null
-        primary key
-);
+    category_name varchar(20) not null primary key,
+        id int not null
 
+);
+create unique index category_tbl_id_uindex
+    on category_tbl (id);
 
 create table client_tbl
 (
     login           varchar(50)  not null
         primary key,
     fio             varchar(100) not null,
-    `e-mail`        varchar(50)  not null,
+    email        varchar(50)  not null,
     client_password varchar(50)  not null,
     phone           varchar(15)  not null
+);
+
+create table product_tbl
+(
+    id            int auto_increment
+        primary key,
+    category      varchar(20)  not null,
+    naming        varchar(200) not null,
+    serial_number varchar(50)  null,
+    old_price     int          not null,
+    descr         text         not null,
+    pic           blob         not null,
+    color         varchar(50)  null,
+    size          varchar(100) not null,
+    price         int          not null,
+    constraint product_tbl_category_tbl__fk
+        foreign key (category) references category_tbl (category_name)
 );
 
 create table cpu_tbl
@@ -25,7 +44,7 @@ create table cpu_tbl
     codename          varchar(50)     not null,
     socket            varchar(50)     not null,
     cores_number      varchar(50)     not null,
-    `hyper-threading` enum ('-', '+') not null,
+    hyperthreading enum ('-', '+') not null,
     threads_number    varchar(50)     not null,
     clock_freq        varchar(50)     null,
     boost_freq        varchar(50)     not null,
@@ -64,22 +83,6 @@ create table order_tbl
     client_login varchar(50)     not null,
     constraint order_tbl_client_tbl__fk
         foreign key (client_login) references client_tbl (login)
-);
-
-(
-    id            int auto_increment
-        primary key,
-    category      varchar(20)  not null,
-    naming        varchar(200) not null,
-    serial_numver varchar(50)  null,
-    old_price     int          not null,
-    descr         text         not null,
-    pic           blob         not null,
-    color         varchar(50)  null,
-    size          varchar(100) not null,
-    price         int          not null,
-    constraint product_tbl_category_tbl__fk
-        foreign key (category) references category_tbl (category_name)
 );
 
 create table product_in_order_tbl

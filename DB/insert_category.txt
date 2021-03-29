@@ -1,0 +1,10 @@
+insert into category_tbl(category_name) values('Видеокарты');
+insert into category_tbl(category_name) values('Материнские платы');
+insert into category_tbl(category_name) values('Процессоры');
+insert into category_tbl(category_name) values('Оперативная память');
+insert into category_tbl(category_name) values('Блоки питания');
+insert into category_tbl(category_name) values('HDD/SSD');
+insert into category_tbl(category_name) values('Корпусы');
+insert into category_tbl(category_name) values('Кулеры и СО');
+insert into category_tbl(category_name) values('Шлейфы и кабели');
+insert into category_tbl(category_name) values('Аксессуары');
