@@ -35,7 +35,7 @@
             {
                 echo '
                 <li class="l-menu-item">
-                <a href="">
+                <a href="catalog.php?ct='.$row['category_name'].'">
                     <img src="../pics/video.png">
                     <span>'.$row['category_name'].'</span>
                 </a>
@@ -113,7 +113,7 @@
             echo '
         <div class="product-block">
             <div class="product-info">
-                <a href="">
+                <a href="../pages/product.php?id='.$row['id'].'">
                     <img alt="Video for Icon" src="../pics/'.$row['pic'].'">
                     <p class="product-name">'.$row['naming'].'</p>
                     <p class="product-price">'.$row['price'].' р.<button >Добавить</button> </p>

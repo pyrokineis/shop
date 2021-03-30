@@ -18,11 +18,14 @@ a{
 }
 
 header{
-    height: 5em;
-    background-color: grey;
+    /*height: 5em;*/
+    /*background-color: grey;*/
     width: 100%;
 }
-
+.header-container{
+    background: grey;
+    height: 5em;
+}
 nav{
     display: flex;
     height: 100%;
@@ -74,7 +77,6 @@ nav{
 .search-container{
     padding-top: 5px;
     display: flex;
-    margin: auto auto 100px auto;
     justify-content: center;
 
 }

@@ -1,5 +1,4 @@
 .main-container{
-    padding: 50px 0px 0px 0px;
     display: block;
     /*background: crimson;*/
     max-width: 1800px;
@@ -30,6 +29,15 @@
     border-bottom: khaki solid 3px;
     border-radius: 3px;
 }
+.categories-title{
+    font-size: 27px;
+}
+
+.categories-title::after{
+    content:"→";
+    font-size: 20px;
+}
+
 .categories-item{
     display: flex;
     flex-wrap: wrap;
@@ -52,13 +60,7 @@
     margin-top: 10px;
     width: 80%;
 }
-.categories-title{
-    font-size: 27px;
-}
-.categories-title::after{
-    content:"→";
-    font-size: 20px;
-}
+
 
 .banners-container{
     margin-top: 10px;
