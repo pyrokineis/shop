@@ -17,7 +17,15 @@
     padding: 10px;
     margin: auto;
     /*background: chartreuse;*/
+}
 
+.categories-title{
+    font-size: 27px;
+}
+
+.categories-title::after{
+    content:"→";
+    font-size: 20px;
 }
 
 .categories-container{
@@ -29,19 +37,11 @@
     border-bottom: khaki solid 3px;
     border-radius: 3px;
 }
-.categories-title{
-    font-size: 27px;
-}
-
-.categories-title::after{
-    content:"→";
-    font-size: 20px;
-}
 
 .categories-item{
     display: flex;
     flex-wrap: wrap;
-    width: 19%;
+    width: 19.5%;
     /*background: blueviolet;*/
     margin-top: 10px;
     justify-content: center;
