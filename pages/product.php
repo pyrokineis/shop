@@ -13,7 +13,11 @@
 </header>
 <main>
 <div class="product-main-container">
+    <div class="product-left-box">
+        <img src="../pics/video.png">
+        <p class="prod-price">Lorem ipsum.<button class="prod-button">купить</button></p>
 
+    </div>
 </div>
 </main>
 <footer>
