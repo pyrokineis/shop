@@ -267,6 +267,7 @@ a.button{
     display: block;
     height: 500px;
 }
+
 .footer-main-container{
     margin: 10px 10px;
     max-width: 1800px;
@@ -276,9 +277,11 @@ a.button{
     /*background: crimson;*/
     justify-content: center;
 }
+
 .footer-column{
     margin: 10px 200px 30px 200px;
 }
+
 
 .footer-column li{
     list-style: none;

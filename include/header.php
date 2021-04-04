@@ -24,12 +24,14 @@ echo <<<HERE
 </div>
 
 
+   <form name="search" method="post" action="../pages/catalog.php">
     <div class="search-container">
         <div class="search-panel">
-            <input type="text" name="search" placeholder="  Поиск на сайте">
+            <input type="search" name="query" placeholder="  Поиск на сайте">
         </div>
         <div class="search-button">
             <button type="submit">Найти</button>
         </div>
     </div>
+</form>
 HERE;
