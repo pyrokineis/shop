@@ -1,4 +1,5 @@
 <?php
+require_once '../DB/connection.php';
 echo <<<HERE
 
 <div class="header-container">
@@ -35,4 +36,5 @@ echo <<<HERE
         </form>        
     </div>
 </form>
+
 HERE;

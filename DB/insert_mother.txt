@@ -1,0 +1,14 @@
+insert into product_tbl(category, naming, serial_number, old_price, descr, pic, color, size, price)
+values ('Материнские платы', 'Материнская плата ASROCK A320M-DVS R4.0, SocketAM4, AMD A320, mATX, Ret',
+        '01111', '14000', 'Хорошая',
+        'ASROCK A320M-DVS R4.0, SocketAM4, AMD A320, mATX, Ret.jpg', 'белая', '25х35х45', '12999' ),
+       ('Материнские платы', 'Материнская плата ASROCK B450M PRO4, SocketAM4, AMD B450, mATX, Ret',
+        '01112', '14000', 'Хорошая',
+        'ASROCK B450M PRO4, SocketAM4, AMD B450, mATX, Ret.jpg', 'белая', '25х35х45', '14999' ),
+       ('Материнские платы', 'Материнская плата ASUS PRIME H310M-R R2.0, LGA 1151v2, Intel H310, mATX, Ret (White Box)',
+        '01113', '14000', 'Хорошая',
+        'ASUS PRIME H310M-R R2.0, LGA 1151v2, Intel H310, mATX, Ret (White Box).jpg', 'белая', '25х35х45', '6999' ),
+       ('Материнские платы', 'Материнская плата ASROCK B450M PRO4-F, SocketAM4, AMD B450, mATX, Ret',
+        '01114', '14000', 'Хорошая',
+        'ASROCK B450M PRO4-F, SocketAM4, AMD B450, mATX, Ret.jpg', 'белая', '25х35х45', '5599' );
+delete from product_tbl where category='Материнские платы'

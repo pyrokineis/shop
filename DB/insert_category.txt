@@ -3,8 +3,8 @@ insert into category_tbl(category_name, id) values('Материнские пл�
 insert into category_tbl(category_name, id) values('Процессоры','3');
 insert into category_tbl(category_name, id) values('Оперативная память','4');
 insert into category_tbl(category_name, id) values('Блоки питания','5');
-insert into category_tbl(category_name, id) values('HDD/SSD','6');
-insert into category_tbl(category_name, id) values('Корпусы','7');
+insert into category_tbl(category_name, id) values('HDD и SSD','6');
+insert into category_tbl(category_name, id) values('Корпуса','7');
 insert into category_tbl(category_name, id) values('Кулеры и СО','8');
 insert into category_tbl(category_name, id) values('Шлейфы и кабели','9');
 insert into category_tbl(category_name, id) values('Аксессуары','10');

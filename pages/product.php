@@ -14,7 +14,7 @@
 <main>
 <div class="product-main-container">
     <div class="product-left-box">
-        <img src="../pics/video.png">
+        <img src="../pics/video2.png">
         <p class="prod-price">Lorem ipsum.<button class="prod-button">купить</button></p>
 
     </div>
