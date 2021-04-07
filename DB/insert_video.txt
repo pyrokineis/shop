@@ -1,0 +1,19 @@
+insert into product_tbl(category, naming, serial_number, old_price, descr, pic, color, size, price)
+values ('Видеокарты', 'Видеокарта MSI nVidia GeForce GTX 1650SUPER , GTX 1650 SUPER GAMING X, 4ГБ, GDDR6, Ret',
+'312444','45000','мда','1196210_v01_b.jpg','черная','20х20х20','34990')
+
+insert into product_tbl(category, naming, serial_number, old_price, descr, pic, color, size, price)
+values ('Видеокарты', 'Видеокарта GIGABYTE NVIDIA GeForce RTX 3070 , GV-N3070GAMING OC-8GD, 8ГБ, GDDR6, OC, Ret,
+'6536537','50000','мда','1420798_v01_b.jpg','черная','20х20х20','133990')
+
+insert into product_tbl(category, naming, serial_number, old_price, descr, pic, color, size, price)
+values ('Видеокарты', 'Видеокарта GIGABYTE nVidia GeForce RTX 2060 , GV-N2060OC-6GD, 6ГБ, GDDR6, OC, Ret',
+'21212','35000','мда','1118883_v01_b.jpg','черная','20х20х20','65990')
+
+insert into product_tbl(category, naming, serial_number, old_price, descr, pic, color, size, price)
+values ('Видеокарты','Видеокарта GIGABYTE AMD Radeon RX 6700XT , GV-R67XTGAMING OC-12GD, 12ГБ, GDDR6, OC, Ret',
+'54356436','86399','мда','1477906_v01_b.jpg','черная','20х20х20','91990')
+
+insert into product_tbl(category, naming, serial_number, old_price, descr, pic, color, size, price)
+values ('Видеокарты','Видеокарта SAPPHIRE AMD Radeon RX 6700XT , 11306-01-20G RX 6700XT Gaming NITRO+ 12G, 12ГБ, GDDR6, OC, Ret',
+'54356436','86399','мда','1487938_v01_b.jpg','черная','20х20х20','94990')

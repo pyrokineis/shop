@@ -55,7 +55,7 @@
                             <div class="product-block">
                                 <div class="product-info">
                                     <a href="../pages/product.php?id='.$row['id'].'">
-                                        <img alt="Video for Icon" src="../pics/'.$row['pic'].'">
+                                        <img alt="Video for Icon" src="../pics/'.$row['category'].'/'.$row['pic'].'">
                                         <p class="product-name">'.$row['naming'].'</p>
                                         <p class="product-price">'.$row['price'].' р.<button >Добавить</button> </p>
                                     </a>
@@ -77,7 +77,7 @@
                     <div class="product-block">
                         <div class="product-info">
                             <a href="../pages/product.php?id='.$row['id'].'">
-                                <img alt="Video for Icon" src="../pics/'.$row['pic'].'">
+                                <img alt="Video for Icon" src="../pics/'.$row['category'].'/'.$row['pic'].'">
                                 <p class="product-name">'.$row['naming'].'</p>
                                 <p class="product-price">'.$row['price'].' р.<button >Добавить</button> </p>
                             </a>

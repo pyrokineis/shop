@@ -37,6 +37,9 @@
     border-bottom: khaki solid 3px;
     border-radius: 3px;
 }
+.categories-item:hover{
+    border: #e9c857 solid 1px;
+}
 
 .categories-item{
     display: flex;
