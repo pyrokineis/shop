@@ -59,7 +59,6 @@
     display: flex;
     padding-right: 50px;
     margin: 0 auto auto auto;
-    /*background: orange;*/
 }
 
 
@@ -91,20 +90,16 @@
 
 
 .product-block p{
-
     overflow-wrap: break-word;
     vertical-align: center;
 }
 
  .product-block img{
-     /*background: blueviolet;*/
      border-radius: 20px;
      width: 170px;
      padding-left: 10px;
  }
-.add-product-btn{
 
-}
 .product-block button{
     display: block;
     padding: 10px 5px;
@@ -120,22 +115,17 @@
     cursor: hand;
 }
 
-
 .product-name{
-
     margin: 30px auto;
     font-size: 25px;
-    /*margin: 0 20px;*/
     width: 65%;
-    /*background: #bbff00;*/
-
 }
+
 .product-price{
     margin: 30px auto;
     font-weight: bolder;
     font-size: 27px;
     width: max-content;
-    /*background: crimson;*/
     text-align: right;
     padding-right: 20px;
     text-wrap: avoid;
@@ -144,3 +134,4 @@
 .product-info{
     display: flex;
 }
+

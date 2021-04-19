@@ -1,0 +1,101 @@
+.basket-body{
+    display: flex;
+    background: orange;
+    flex-wrap: wrap;
+}
+.basket-header{
+    font-size: 3em;
+    padding-left: 75px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.basket-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: chartreuse;
+}
+
+.basket-product-block{
+    padding: 5px;
+    width: 90%;
+    max-width: 1380px;
+    display: block;
+    border: dimgrey solid 1px;
+    height: auto;
+    margin: auto;
+    border-radius: 30px;
+    justify-items: right;
+}
+
+.basket-product-block:hover{
+    border: #e9c857 solid 1px;
+}
+
+.basket-product-block a{
+    box-sizing: border-box;
+    /*background: #b3ff00;*/
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+.basket-product-block p{
+    overflow-wrap: break-word;
+    vertical-align: center;
+}
+
+.basket-product-block img{
+    /*background: blueviolet;*/
+    border-radius: 20px;
+    width: 170px;
+    padding-left: 10px;
+}
+
+.basket-product-block button{
+    display: block;
+    padding: 10px 5px;
+    background-color: khaki;
+    border-radius: 20px;
+    margin: 10px auto auto auto;
+    font-size: 17px;
+    outline: none;
+}
+
+.basket-product-block button:hover{
+    background-color: #e9c857;
+    cursor: hand;
+}
+
+
+.basket-product-name{
+    background: red;
+    margin: 30px auto 10px auto;
+    font-size: 25px;
+    /*margin: 0 20px;*/
+    width: 65%;
+
+}
+.basket-product-price{
+    margin: 30px auto;
+    font-weight: bolder;
+    font-size: 27px;
+    width: max-content;
+    background: crimson;
+    text-align: right;
+    padding-right: 20px;
+    text-wrap: avoid;
+}
+
+.basket-product-info{
+    display: flex;
+}
+
+.basket-product-options{
+    height: 20px;
+    background: burlywood;
+    width: 80%;
+    margin-left: 200px;
+}

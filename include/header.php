@@ -8,7 +8,7 @@ echo <<<HERE
     </div>
     <div class="panel-block">
         <div class="panel">
-            <a>Корзина</a>
+            <a href="../pages/basket.php">Корзина</a>
             <a href="#modal1">Личный кабинет</a>
         </div>
     </div>
