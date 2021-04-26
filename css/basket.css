@@ -1,6 +1,6 @@
 .basket-body{
     display: flex;
-    background: orange;
+    /*background: orange;*/
     flex-wrap: wrap;
 }
 .basket-header{
@@ -13,7 +13,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: chartreuse;
+    /*background: chartreuse;*/
 }
 
 .basket-product-block{
@@ -23,7 +23,7 @@
     display: block;
     border: dimgrey solid 1px;
     height: auto;
-    margin: auto;
+    margin: 10px auto auto auto;
     border-radius: 30px;
     justify-items: right;
 }

@@ -1,0 +1,2 @@
+insert into baskets_tbl(client_login) values ('Andrew');
+insert into baskets_tbl(client_login) values ('Igor');

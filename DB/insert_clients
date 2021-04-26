@@ -1,0 +1,2 @@
+insert into client_tbl (login, fio, email, client_password, phone) values ('Andrew','Kalmykov Andrew','kadqwq@gmail.com','qwerty','89172701178');
+insert into client_tbl (login, fio, email, client_password, phone) values ('Igor','Pokosenkov Igor','Igor228@mail.ru','12345','6547456747');
