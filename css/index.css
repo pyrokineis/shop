@@ -58,11 +58,16 @@
     /*background-color: crimson;*/
 }
 
-
-.categories-item img{
-    margin-top: 10px;
+.index_item_img{
+    display: flex;
+    margin: 10px auto auto auto;
     max-width: 80%;
     height: 80%;
+}
+.index_item_img img{
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 

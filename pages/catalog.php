@@ -79,7 +79,7 @@
                             <a href="../pages/product.php?id='.$row['id'].'">
                                 <img alt="Video for Icon" src="../pics/'.$row['category'].'/'.$row['pic'].'">
                                 <p class="product-name">'.$row['naming'].'</p>
-                                <p class="product-price">'.$row['price'].' р.<button >Добавить</button> </p>
+                                <p class="product-price">'.$row['price'].' р.<button  value="'.$row['id'].'">Добавить</button> </p>
                             </a>
                         </div>
                     </div>';

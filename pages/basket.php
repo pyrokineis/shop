@@ -37,7 +37,7 @@
                             <div class="basket-product-info">
                                 <img alt="Video for Icon" src="../pics/'.$row2['category'].'/'.$row2['pic'].'">
                                 <p class="basket-product-name">'.$row2['naming'].'</p>
-                                <p class="basket-product-price"">'.$row2['price'].' р.<button >Добавить</button> </p>
+                                <p class="basket-product-price"">'.$row2['price'].' р.<button >Удалить</button> </p>
                             </div>
                             <div class="basket-product-options">
     

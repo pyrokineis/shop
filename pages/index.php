@@ -31,7 +31,9 @@
                     echo '
                 <div class="categories-item">
                     <a href="catalog.php?ct='.$row['category_name'].'">
-                        <img src="../pics/'.$row['category_name'].'.jpg" />
+                    <div class="index_item_img">
+                     <img src="../pics/'.$row['category_name'].'.jpg" />
+                    </div>
                         <div class="categories-title">
                         ' . $row['category_name'].'
                         </div>
