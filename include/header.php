@@ -1,5 +1,7 @@
 <?php
 require_once '../DB/connection.php';
+require_once '../include/cart-cookie.php';
+
 echo <<<HERE
 
 <div class="header-container">
