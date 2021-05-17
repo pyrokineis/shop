@@ -1,6 +1,6 @@
 <?php
 require_once '../DB/connection.php';
-require_once '../include/cart-cookie.php';
+require_once '../include/cookie-set.php';
 
 echo <<<HERE
 

@@ -52,15 +52,17 @@
                     while ($row=mysqli_fetch_array($result))
                     {
                         echo '
+                        <form action="../include/basket-add.php?basket-add" method="post" target="_blank">
                             <div class="product-block">
                                 <div class="product-info">
-                                    <a href="../pages/product.php?id='.$row['id'].'">
+                                    <a href="../pages/product.php?id=' .$row['id'].'">
                                         <img alt="Video for Icon" src="../pics/'.$row['category'].'/'.$row['pic'].'">
                                         <p class="product-name">'.$row['naming'].'</p>
-                                        <p class="product-price">'.$row['price'].' р.<button >Добавить</button> </p>
+                                        <p class="product-price">'.$row['price'].' р.<button name="prod_id" type="submit" value="'.$row['id'].'">Добавить</button> </p>
                                     </a>
                                 </div>
-                            </div>';
+                            </div>
+                        </form>';
                     }
                 }
             }
@@ -74,15 +76,17 @@
             while ($row=mysqli_fetch_array($result))
             {
                 echo '
+                <form action="../include/basket-add.php?basket-add" method="post" target="_blank">
                     <div class="product-block">
                         <div class="product-info">
-                            <a href="../pages/product.php?id='.$row['id'].'">
+                            <a href="../pages/product.php?id=' .$row['id'].'">
                                 <img alt="Video for Icon" src="../pics/'.$row['category'].'/'.$row['pic'].'">
-                                <p class="product-name">'.$row['naming'].'</p>
-                                <p class="product-price">'.$row['price'].' р.<button  value="'.$row['id'].'">Добавить</button> </p>
+                                <p class="product-name" name="prod_name">'.$row['naming'].'</p>
+                                <p class="product-price">'.$row['price'].' р.<button name="prod_id" type="submit" value="'.$row['id'].'">Добавить</button> </p>
                             </a>
                         </div>
-                    </div>';
+                    </div>
+                </form>';
             }
 
         }
