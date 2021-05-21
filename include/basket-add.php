@@ -19,12 +19,12 @@ if (isset($_GET['basket-add']))
                 $prod_count=$row0['product_count']+1;
             }
             $query1 = "update basket_content_tbl set product_count='$prod_count' where product_id='$product_id' and basket_id='$basket_id'";
-            mysqli_query($link,$query1) or die("Ошибка0" . mysqli_error($link));
+            mysqli_query($link,$query1) or die("Ошибка1" . mysqli_error($link));
         }
         else
         {
             $query2="insert into basket_content_tbl(basket_id, product_id, product_count) values ('$basket_id','$product_id',1)";
-            mysqli_query($link,$query2) or die("Ошибка0" . mysqli_error($link));
+            mysqli_query($link,$query2) or die("Ошибка2" . mysqli_error($link));
         }
         echo '<script>window.close()</script>';
     }

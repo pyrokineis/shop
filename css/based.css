@@ -58,8 +58,13 @@ nav{
     font-weight: bold;
     text-decoration: none;
     color: black;
-    margin-left: 20px;
+    margin-left: 30px;
 
+}
+
+.panel{
+    display: flex;
+    margin: auto;
 }
 
 .upper-menu{

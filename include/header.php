@@ -1,6 +1,16 @@
 <?php
 require_once '../DB/connection.php';
 require_once '../include/cookie-set.php';
+include_once("../include/login_win.php");
+
+echo $_SESSION["name"];
+if (!isset($_SESSION["name"]))
+{
+    session_start();
+}
+
+
+
 
 echo <<<HERE
 
@@ -11,7 +21,11 @@ echo <<<HERE
     <div class="panel-block">
         <div class="panel">
             <a href="../pages/basket.php">Корзина</a>
-            <a href="#modal1">Личный кабинет</a>
+            <form action="../include/LK-back.php" method="post">
+                <button type="submit">Личный кабинет</button>
+            </form>
+            
+            
         </div>
     </div>
 

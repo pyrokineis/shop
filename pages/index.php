@@ -13,7 +13,9 @@
 
 
 <main>
-    <?php include_once("../include/login_win.php");?>
+<?php
+        $_SESSION["name"]="None";
+    ?>
     <div class="main-container">
         <div class="main-box">
             <div class="categoriesBox-header">
@@ -24,6 +26,7 @@
 
             <div class="categories-container">
                 <?php
+                echo "ZDAROVA ".$_SESSION["name"];
                 $query ="SELECT * FROM category_tbl";
                 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 while ($row=mysqli_fetch_array($result))
