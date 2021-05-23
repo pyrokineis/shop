@@ -26,8 +26,9 @@ echo <<<HERE
                 <h3 class="modal-title">Личный кабинет</h3>
                 <a href="" title="Закрыть" class="close">×</a>
             </div>
-          
+         
           <form action="#" method="post">
+           <form method="get" action="login-back.php?regis">
             <p>E-mail</p>
             <input type="text" name="mail-input">
             <p>Логин</p>
@@ -44,8 +45,7 @@ echo <<<HERE
             <input type="text" name="name-input">
             <p>Отчество</p>
             <input type="text" name="patro-input">
-            <form method="post" action="login-back.php?regis">
-                 <button class="login-button">Зарегестрироваться</button>
+              <button class="login-button">Зарегестрироваться</button>
             </form>
 
           </form>
@@ -99,6 +99,30 @@ echo <<<HERE
                 <a href="#" title="Закрыть" class="close">×</a>
             </div>
             <b>Пароли не совпадают!</b>
+            <br>
+        </div>
+    </div>
+
+<div id="modalFieldErr" class="modal">
+        <a class="back" href="#"></a>
+        <div id="login-window">
+            <div class="login-top">
+                <h3 class="modal-title">Ошибка</h3>
+                <a href="#" title="Закрыть" class="close">×</a>
+            </div>
+            <b>Не правильно заполнены поля!</b>
+            <br>
+        </div>
+    </div>
+    
+<div id="modalPostErr" class="modal">
+        <a class="back" href="#"></a>
+        <div id="login-window">
+            <div class="login-top">
+                <h3 class="modal-title">Ошибка</h3>
+                <a href="#" title="Закрыть" class="close">×</a>
+            </div>
+            <b>Пост еррор май дуд!</b>
             <br>
         </div>
     </div>

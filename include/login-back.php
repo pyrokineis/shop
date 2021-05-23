@@ -14,9 +14,10 @@ if (isset($_GET['login']))
             $row_num=mysqli_num_rows($result);
             if ($row_num==1)
             {
-                session_start();
-                $_SESSION["name"]=$login;
-                echo '<script>window.location.href="../pages/LK.php"</script>';
+                    session_start();
+                    $_SESSION["login"]=$login;
+                    echo '<script>window.location.href="../pages/LK.php"</script>';
+
             }
             else
             {
@@ -61,6 +62,12 @@ else if (isset($_GET['regis']))
                 echo '<script>window.location.href="../pages/index.php#modalPswdErr"</script>';
             }
         }
+        else {
+            echo '<script>window.location.href="../pages/index.php#modalFieldErr"</script>';
+        }
+    }
+    else {
+        echo '<script>window.location.href="../pages/index.php#modalPostErr"</script>';
     }
 
 }

@@ -9,13 +9,12 @@
 
 <header>
     <?php include_once ("../include/header.php");?>
-</header>
-<main>
+</header
 
+<main>
+    <?php
+    echo"ZDAROVA ".$_SESSION["login"];
+    ?>
 </main>
  </html>
 
-<?php
-session_start();
-echo"ZDAROVA ".$_SESSION["name"];
-?>
