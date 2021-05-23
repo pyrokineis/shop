@@ -18,3 +18,4 @@
 <?php
 session_start();
 echo"ZDAROVA ".$_SESSION["name"];
+?>

@@ -14,7 +14,17 @@
 
 <main>
 <?php
+    if (!isset($_SESSION["name"]))
+    {
         $_SESSION["name"]="None";
+    }
+
+    if (isset($_GET['autoError']))
+    {
+        $message="<tr><td align='center'><b>Ошибка! Пользователь с таким логином и паролем не найден</b></td></td>";
+        print $message;
+    }
+
     ?>
     <div class="main-container">
         <div class="main-box">
@@ -26,7 +36,7 @@
 
             <div class="categories-container">
                 <?php
-                echo "ZDAROVA ".$_SESSION["name"];
+//                echo "ZDAROVA ".$_SESSION["name"];
                 $query ="SELECT * FROM category_tbl";
                 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 while ($row=mysqli_fetch_array($result))

@@ -3,7 +3,7 @@ require_once '../DB/connection.php';
 require_once '../include/cookie-set.php';
 include_once("../include/login_win.php");
 
-echo $_SESSION["name"];
+//echo $_SESSION["name"];
 if (!isset($_SESSION["name"]))
 {
     session_start();

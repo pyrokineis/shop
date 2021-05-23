@@ -6,32 +6,61 @@ if (isset($_GET['login']))
     {
         $login = $_POST['login-input'];
         $password = $_POST['password-input'];
-        //TODO проверки содержания
-
-        $query="select * from client_tbl where login='$login' and client_password='$password'";
-        $result = mysqli_query($link,$query) or die("Ошибка1" . mysqli_error($link));
-        $row_num=mysqli_num_rows($result);
-        if ($row_num==1)
+        if ($login!="" && $password!="")
         {
-            session_start();
-            $_SESSION["name"]=$login;
-            echo '<script>window.location.href="../pages/LK.php"</script>';
+            $query="select * from client_tbl where login='$login' and client_password='$password'";
+            $result = mysqli_query($link,$query) or die("Ошибка1" . mysqli_error($link));
+            $row=mysqli_fetch_array($result);
+            $row_num=mysqli_num_rows($result);
+            if ($row_num==1)
+            {
+                session_start();
+                $_SESSION["name"]=$login;
+                echo '<script>window.location.href="../pages/LK.php"</script>';
+            }
+            else
+            {
+                echo '<script>window.location.href="../pages/index.php#modalNoUser"</script>';
+            }
         }
+
     }
 }
 else if (isset($_GET['regis']))
 {
-    if (isset($_POST['mail-input']) && isset($_POST['login-input']) && isset($_POST['password-input']) && isset($_POST['surname-input'])
+    if (isset($_POST['mail-input']) && isset($_POST['login-input']) && isset($_POST['password-input']) && isset($_POST['password2-input']) && isset($_POST['surname-input'])
         && isset($_POST['name-input'])  && isset($_POST['mobile-input']) && isset($_POST['patro-input']))
     {
+
         $mail=$_POST['mail-input'];
         $login=$_POST['login-input'];
         $password=$_POST['password-input'];
+        $password2=$_POST['password2-input'];
         $mobile=$_POST['mobile-input'];
         $surname=$_POST['surname-input'];
         $name=$_POST['name-input'];
         $patro=$_POST['patro-input'];
-        //TODO проверки содержания
+        If ($mail!="" && $login!="" && $password!="" && $password2!="" && $mobile!="" && $surname!="" && $name!="" && $patro!="")
+        {
+            if ($password==$password2)
+            {
+                $query="select login from client_tbl where login='$login'";
+                $result=mysqli_query($link,$query) or die("Ошибка2".mysqli_error($link));
+                if($row=mysqli_fetch_array($result))
+                {
+                    echo '<script>window.location.href="../pages/index.php#modalExUser"</script>';
+                }
+                else {
+                    $query="insert into client_tbl(login,email,client_password,phone, firstname, surname, patro) 
+                        values ('$login','$mail','$password','$mobile','$name','$surname','$patro')";
+                    mysqli_query($link,$query) or die ("Ошибка3".mysqli_error($link));
+                    echo '<script>window.location.href="../pages/index.php#modalSucReg"</script>';
+                }
+            }
+            else{
+                echo '<script>window.location.href="../pages/index.php#modalPswdErr"</script>';
+            }
+        }
     }
 
 }
