@@ -29,7 +29,8 @@
     $basket_id=$row1['baskets_id'];
     print(       $basket_id);
     $query="select * from basket_content_tbl where basket_id='$basket_id'";
-    while ($row2=mysqli_fetch_array($query))
+    $result2=mysqli_query($link, $query);
+    while ($row2=mysqli_fetch_array($result2))
     {
         $product_id=$row2['product_id'];
         $product_count=$row2['product_count'];
