@@ -1,0 +1,16 @@
+#exit-btn{
+    background: none;
+    width: 1000px;
+}
+
+.LK-data-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background: red;
+
+}
+
+.LK-data-container input{
+    height: 20px;
+}

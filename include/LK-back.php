@@ -1,6 +1,6 @@
 <?php
 include_once("../include/header.php");
-if ($_SESSION["name"]=="None")
+if (!isset($_SESSION["login"]))
 {
     echo '<script>window.location.href="../pages/index.php#modal1"</script>';
 }
