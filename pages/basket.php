@@ -118,11 +118,21 @@
                         ';
                         }
                     }
+                    echo '
+                        <form action="order.php"><button name="order" type="submit">Оформить</button></form>
+
+                    ';
                 }
                 ?>
 
         </div>
        </div>
+    <div class="orders-body">
+        <h1>Заказы</h1>
+<!--        <div class="order-info">-->
+<!--            -->
+<!--        </div>-->
+    </div>
 </main>
 
 

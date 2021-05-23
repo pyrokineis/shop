@@ -55,6 +55,9 @@ else if (isset($_GET['regis']))
                     $query="insert into client_tbl(login,email,client_password,phone, firstname, surname, patro) 
                         values ('$login','$mail','$password','$mobile','$name','$surname','$patro')";
                     mysqli_query($link,$query) or die ("Ошибка3".mysqli_error($link));
+                    $id=$_COOKIE["BASKET_ID"];
+                    $query="update baskets_tbl set client_login='$login' where baskets_id=='$id'";
+                    mysqli_query($link,$query) or die ("Ошибка4".mysqli_error($link));
                     echo '<script>window.location.href="../pages/index.php#modalSucReg"</script>';
                 }
             }
