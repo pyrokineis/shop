@@ -23,7 +23,7 @@
 
             <div class="categories-container">
                 <?php
-                echo $_SESSION["login"];
+//                echo $_SESSION["login"];
                 $query ="SELECT * FROM category_tbl";
                 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
                 while ($row=mysqli_fetch_array($result))

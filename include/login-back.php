@@ -32,7 +32,6 @@ else if (isset($_GET['regis']))
     if (isset($_POST['mail-input']) && isset($_POST['login-input']) && isset($_POST['password-input']) && isset($_POST['password2-input']) && isset($_POST['surname-input'])
         && isset($_POST['name-input'])  && isset($_POST['mobile-input']) && isset($_POST['patro-input']))
     {
-
         $mail=$_POST['mail-input'];
         $login=$_POST['login-input'];
         $password=$_POST['password-input'];
@@ -41,7 +40,7 @@ else if (isset($_GET['regis']))
         $surname=$_POST['surname-input'];
         $name=$_POST['name-input'];
         $patro=$_POST['patro-input'];
-        If ($mail!="" && $login!="" && $password!="" && $password2!="" && $mobile!="" && $surname!="" && $name!="" && $patro!="")
+        If ($mail!="" && $login!="" && $password!="" && $password2!="" && $mobile!="")
         {
             if ($password==$password2)
             {
@@ -56,7 +55,7 @@ else if (isset($_GET['regis']))
                         values ('$login','$mail','$password','$mobile','$name','$surname','$patro')";
                     mysqli_query($link,$query) or die ("Ошибка3".mysqli_error($link));
                     $id=$_COOKIE["BASKET_ID"];
-                    $query="update baskets_tbl set client_login='$login' where baskets_id=='$id'";
+                    $query="update baskets_tbl set client_login='$login' where baskets_id='$id'";
                     mysqli_query($link,$query) or die ("Ошибка4".mysqli_error($link));
                     echo '<script>window.location.href="../pages/index.php#modalSucReg"</script>';
                 }

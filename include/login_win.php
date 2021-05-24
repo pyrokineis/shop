@@ -27,8 +27,8 @@ echo <<<HERE
                 <a href="" title="Закрыть" class="close">×</a>
             </div>
          
-          <form action="#" method="post">
-           <form method="get" action="login-back.php?regis">
+<!--          <form action="#" method="post">-->
+           <form method="post" action="../include/login-back.php?regis">
             <p>E-mail</p>
             <input type="text" name="mail-input">
             <p>Логин</p>
@@ -45,8 +45,8 @@ echo <<<HERE
             <input type="text" name="name-input">
             <p>Отчество</p>
             <input type="text" name="patro-input">
-              <button class="login-button">Зарегестрироваться</button>
-            </form>
+            <button class="login-button">Зарегестрироваться</button>
+<!--            </form>-->
 
           </form>
             <form method="post">
@@ -110,7 +110,7 @@ echo <<<HERE
                 <h3 class="modal-title">Ошибка</h3>
                 <a href="#" title="Закрыть" class="close">×</a>
             </div>
-            <b>Не правильно заполнены поля!</b>
+            <b>Неправильно заполнены поля!</b>
             <br>
         </div>
     </div>
@@ -126,4 +126,37 @@ echo <<<HERE
             <br>
         </div>
     </div>
+    
+     <div id="modalPswrdChng" class="modal">
+        <a class="back" href="#"></a>
+        <div id="login-window">
+            <div class="login-top">
+                <h3 class="modal-title">Сменить пароль</h3>
+                <a href="#" title="Закрыть" class="close">×</a>
+            </div>
+            <form action="../pages/LK.php?PswrdChng" method="post">
+             <p>Старый пароль</p>
+            <input type="password" name="old-password-input">
+            <p>Новый пароль</p>
+            <input type="password" name="new-password1-input">
+            <p>Повторите пароль</p>
+            <input type="password" name="new-password2-input">
+            <br>
+             <button class="login-button" type="submit">Сменить</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="modalWrongPsrd" class="modal">
+        <a class="back" href="#"></a>
+        <div id="login-window">
+            <div class="login-top">
+                <h3 class="modal-title">Ошибка</h3>
+                <a href="#" title="Закрыть" class="close">×</a>
+            </div>
+            <b>Неверный пароль!</b>
+            <br>
+        </div>
+    </div>
+
 HERE;

@@ -15,10 +15,8 @@ echo <<<HERE
         <div class="panel">
             <a href="../pages/basket.php">Корзина</a>
             <form action="../include/LK-back.php" method="post">
-                <button type="submit">Личный кабинет</button>
-            </form>
-            
-            
+                <button type="submit" class="LK-btn" >Личный кабинет</button>
+            </form>  
         </div>
     </div>
 
