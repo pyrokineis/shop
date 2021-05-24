@@ -80,7 +80,7 @@
         <div class="LK-data-container">
             <form method="post" action="LK.php?save">
                 <p>Логин</p>
-                <input name="new-login-input" value="<?= $login ?>">
+                <input name="new-login-input" readonly value="<?= $login ?>">
                 <p>Почта</p>
                 <input name="mail-input" value="<?= $email ?>">
                 <p>Телефон</p>
